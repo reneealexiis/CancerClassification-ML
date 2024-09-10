@@ -5,7 +5,7 @@ Prepared by Derick Cazares, Melissa Morales, Renee Perez, and Feven Surafel
 The objective of this project is to utilize the Wisconsin Breast Cancer Diagnostic Dataset for predictive analysis to improve early detection and diagnosis of breast cancer. By leveraging machine learning techniques, we seek to develop a predictive model that can classify tumor samples as malignant or benign based on various features extracted from cell nuclei.
 
 ## Results
-**Machine Learning Linear Regression Model (XXX% Accuracy)**
+**Machine Learning Linear Regression Model (94% Accuracy)**
 
 * Class B (Benign Diagnosis)
     * Precision: 0.95, meaning that 95% of all predicted benign instances were correctly classified as benign.
