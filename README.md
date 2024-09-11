@@ -53,4 +53,7 @@ A correlation matrix was computed to identify relationships between features and
 ## Summary
 Both the Logistic Regression and Random Forest models performed well with an accuracy of 95%. The Logistic Regression model demonstrated high precision and recall for both benign and malignant tumor classifications, making it a strong candidate for this classification problem.
 
+## Instructions to Final Work 
+You can find two notebooks in the repository, one for the Logistic Regression Model and one for the Random Forest Model to be run in Google Colab. 
+"Breast_Cancer_Logistic_Regression_Model-Colab.ipynb" and "Breast_Cancer_Random_Forest_Model-Colab.ipynb"
 
