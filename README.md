@@ -14,6 +14,16 @@ The objective of this project is to utilize the Wisconsin Breast Cancer Diagnost
 * Class M (Malignant Diagnosis)
     * Precision: 0.93, meaning that 93% of all predicted malignant instances were correctly classified as malignant.
     * Recall: 0.93, meaning that 93% of all actual malignant cases were correctly identified.
+ 
+**Machine Learning Random Forest Classification Model (95% Accuracy)**
+
+* Class B (Benign Diagnosis)
+    * Precision: 0.96, meaning that 96% of all predicted benign instances were correctly classified as benign.
+    * Recall: 0.99, meaning that 99% of all actual benign cases were correctly identified.
+ 
+* Class M (Malignant Diagnosis)
+    * Precision: 0.98, meaning that 98% of all predicted malignant instances were correctly classified as malignant.
+    * Recall: 0.93, meaning that 93% of all actual malignant cases were correctly identified.
 
 ## Analysis
 
