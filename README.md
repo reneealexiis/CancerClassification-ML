@@ -3,7 +3,7 @@
 Prepared by: Derick Cazares, Melissa Morales, Renee Perez, and Feven Surafel
 
 ## Overview
-This project aims to enhance early breast cancer detection and diagnosis using the Wisconsin Breast Cancer Diagnostic Dataset. By leveraging machine learning techniques, we developed a predictive model to classify tumor samples as malignant or benign based on features extracted from cell nuclei.
+The objective of this project is to utilize the Wisconsin Breast Cancer Diagnostic Dataset for predictive analysis to improve early detection and diagnosis of breast cancer. By leveraging machine learning techniques, we seek to develop a predictive model that can classify tumor samples as malignant or benign based on various features extracted from cell nuclei.
 
 ### Purpose
 The goal is to create a machine learning model that accurately classifies breast cancer tumors. The model evaluates features such as radius, texture, perimeter, and smoothness of cell nuclei to assist with early detection.
@@ -11,13 +11,11 @@ The goal is to create a machine learning model that accurately classifies breast
 ### Data
 
 **Source:**
-The dataset used for this analysis is the Wisconsin Breast Cancer Diagnostic Dataset, which includes:
+The dataset used for this analysis is the [Wisconsin Breast Cancer Diagnostic Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data?resource=download), which includes:
 
 - **569 samples**: 357 benign, 212 malignant
 - **30 features** representing tumor characteristics
 - **Target labels**: Benign (B) and Malignant (M)
-
-You can access and download the dataset from [Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data?resource=download).
 
 ## Machine Learning Process
 1. Retrieve the dataset from Spark and launch the notebook in Google Colab.
@@ -43,23 +41,23 @@ You can access and download the dataset from [Kaggle](https://www.kaggle.com/dat
 
 Interaction terms enhance the model by capturing the combined effect of feature pairs:
 
-- **Benign (0)**
-  - Precision: 0.96
-  - Recall: 1.00
-  - F1-Score: 0.98
+- **Class B (Benign)**
+  - Precision: 0.96 (96% of predicted benign cases were correctly classified)
+  - Recall: 1.00 (100% of actual benign cases were correctly identified)
 
-- **Malignant (1)**
-  - Precision: 1.00
-  - Recall: 0.92
-  - F1-Score: 0.96
+- **Class M (Malignant)**
+  - Precision: 1.00 (100% of predicted malignant cases were correctly classified)
+  - Recall: 0.92 (92% of actual malignant cases were correctly identified)
 
 ## Analysis
 Both models performed well, with the Random Forest achieving 95% accuracy. However, the Logistic Regression model with interaction terms showed superior performance, achieving 97% accuracy. The high precision and recall for both classes indicate the model’s robustness in classifying tumors accurately.
 
 ## Summary and Next Steps
-- Developed a machine learning model for classifying breast cancer biopsy samples using the Wisconsin Breast Cancer Diagnostic Dataset.
-- The enhanced logistic regression model achieved a 97% accuracy, reflecting a 2% improvement in performance.
-- Moving forward, we will explore additional feature interactions, advanced machine learning techniques, and validate the model with external datasets. Integrating the model into clinical workflows could further enhance its practical utility for early breast cancer detection.
+- This project developed a machine learning model for classifying breast cancer biopsy samples as benign or malignant, using the Wisconsin Breast Cancer Diagnostic Dataset.
+- The logistic regression model, enhanced with interaction terms, achieved a 97% accuracy, reflecting a 2% improvement in performance.
+- The high precision, recall, and F1-scores for both classes indicate strong predictive capability
+- Moving forward, next steps include further optimizing the model by exploring additional feature interactions and employing other advanced machine learning techniques.
+- Additionally, validating the model with external datasets and integrating it into clinical workflows could enhance its practical utility for early breast cancer detection.
 
 ## Instructions for Final Work
 Two notebooks are available in the repository for running in Google Colab:
