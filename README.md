@@ -1,59 +1,67 @@
-# CancerClassification-ML
-Prepared by Derick Cazares, Melissa Morales, Renee Perez, and Feven Surafel
+# Cancer Classification with Machine Learning
+
+Prepared by: Derick Cazares, Melissa Morales, Renee Perez, and Feven Surafel
 
 ## Overview
-The objective of this project is to utilize the Wisconsin Breast Cancer Diagnostic Dataset for predictive analysis to improve early detection and diagnosis of breast cancer. By leveraging machine learning techniques, we seek to develop a predictive model that can classify tumor samples as malignant or benign based on various features extracted from cell nuclei.
-
-## Results
-**Machine Learning Linear Regression Model (95% Accuracy)**
-
-* Class B (Benign Diagnosis)
-    * Precision: 0.95, meaning that 95% of all predicted benign instances were correctly classified as benign.
-    * Recall: 0.95, meaning that 95% of all actual benign cases were correctly identified.
- 
-* Class M (Malignant Diagnosis)
-    * Precision: 0.93, meaning that 93% of all predicted malignant instances were correctly classified as malignant.
-    * Recall: 0.93, meaning that 93% of all actual malignant cases were correctly identified.
- 
-**Machine Learning Random Forest Classification Model (95% Accuracy)**
-
-* Class B (Benign Diagnosis)
-    * Precision: 0.96, meaning that 96% of all predicted benign instances were correctly classified as benign.
-    * Recall: 0.99, meaning that 99% of all actual benign cases were correctly identified.
- 
-* Class M (Malignant Diagnosis)
-    * Precision: 0.98, meaning that 98% of all predicted malignant instances were correctly classified as malignant.
-    * Recall: 0.93, meaning that 93% of all actual malignant cases were correctly identified.
-
-## Analysis
+This project aims to enhance early breast cancer detection and diagnosis using the Wisconsin Breast Cancer Diagnostic Dataset. By leveraging machine learning techniques, we developed a predictive model to classify tumor samples as malignant or benign based on features extracted from cell nuclei.
 
 ### Purpose
-The purpose of this analysis is to create a machine learning model capable of accurately classifying breast cancer tumors. This model can assist with early detection by analyzing features such as radius, texture, perimeter, and smoothness of cell nuclei.
+The goal is to create a machine learning model that accurately classifies breast cancer tumors. The model evaluates features such as radius, texture, perimeter, and smoothness of cell nuclei to assist with early detection.
 
 ### Data
-The data used in this analysis comes from the Wisconsin Breast Cancer Diagnostic Dataset and includes:
 
-569 samples
-30 features representing characteristics of the tumor
-Target labels: Benign (B) and Malignant (M)
+**Source:**
+The dataset used for this analysis is the Wisconsin Breast Cancer Diagnostic Dataset, which includes:
 
-Machine Learning Process
-1. Data Preprocessing
-The dataset was cleaned and split into training and testing sets using train_test_split. This ensures that the model is trained on one part of the data and evaluated on a separate part.
-2. Model Training
-A Logistic Regression was selected for its effectiveness in binary classification tasks.
-The model was trained using the training set and validated on the test set to assess its predictive power.
-3. Evaluation Metrics
-The model’s performance was measured using metrics such as precision, recall, F1-score, and accuracy.
-A confusion matrix was generated to visualize the true positive, true negative, false positive, and false negative rates.
-The ROC curve was used to examine the trade-off between sensitivity and specificity across different thresholds.
-4. Correlation Analysis
-A correlation matrix was computed to identify relationships between features and highlight any redundancies. Highly correlated features were noted for potential feature reduction.
+- **569 samples**: 357 benign, 212 malignant
+- **30 features** representing tumor characteristics
+- **Target labels**: Benign (B) and Malignant (M)
 
-## Summary
-Both the Logistic Regression and Random Forest models performed well with an accuracy of 95%. Yet, the Logistic Regression model demonstrated high precision and recall for both benign and malignant tumor classifications, making it a strong candidate for this classification problem.
+You can access and download the dataset from [Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data?resource=download).
 
-## Instructions to Final Work 
-You can find two notebooks in the repository, one for the Logistic Regression Model and one for the Random Forest Model to be run in Google Colab. 
-"Breast_Cancer_Logistic_Regression_Model-Colab.ipynb" and "Breast_Cancer_Random_Forest_Model-Colab.ipynb"
+## Machine Learning Process
+1. Retrieve the dataset from Spark and launch the notebook in Google Colab.
+2. Split the data into training and testing sets.
+3. Train a logistic regression model on the training data (X_train and y_train).
+4. Generate and save predictions for the testing data (X_test).
+5. Evaluate performance using a confusion matrix and classification report.
+6. Optimize and refine the model through iterative improvements.
 
+## Results
+
+**Random Forest Model: 95% Accuracy**
+
+- **Class B (Benign)**
+  - Precision: 0.96 (96% of predicted benign cases were correctly classified)
+  - Recall: 0.99 (99% of actual benign cases were correctly identified)
+
+- **Class M (Malignant)**
+  - Precision: 0.98 (98% of predicted malignant cases were correctly classified)
+  - Recall: 0.93 (93% of actual malignant cases were correctly identified)
+
+**Logistic Regression Model with Interaction Terms: 97% Accuracy**
+
+Interaction terms enhance the model by capturing the combined effect of feature pairs:
+
+- **Benign (0)**
+  - Precision: 0.96
+  - Recall: 1.00
+  - F1-Score: 0.98
+
+- **Malignant (1)**
+  - Precision: 1.00
+  - Recall: 0.92
+  - F1-Score: 0.96
+
+## Analysis
+Both models performed well, with the Random Forest achieving 95% accuracy. However, the Logistic Regression model with interaction terms showed superior performance, achieving 97% accuracy. The high precision and recall for both classes indicate the model’s robustness in classifying tumors accurately.
+
+## Summary and Next Steps
+- Developed a machine learning model for classifying breast cancer biopsy samples using the Wisconsin Breast Cancer Diagnostic Dataset.
+- The enhanced logistic regression model achieved a 97% accuracy, reflecting a 2% improvement in performance.
+- Moving forward, we will explore additional feature interactions, advanced machine learning techniques, and validate the model with external datasets. Integrating the model into clinical workflows could further enhance its practical utility for early breast cancer detection.
+
+## Instructions for Final Work
+Two notebooks are available in the repository for running in Google Colab:
+- **"Breast_Cancer_Logistic_Regression_Model-Colab.ipynb"**
+- **"Breast_Cancer_Random_Forest_Model-Colab.ipynb"**
