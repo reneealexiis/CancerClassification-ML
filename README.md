@@ -5,10 +5,10 @@ Prepared by: Derick Cazares, Melissa Morales, Renee Perez, and Feven Surafel
 ## Overview
 The objective of this project is to utilize the Wisconsin Breast Cancer Diagnostic Dataset for predictive analysis to improve early detection and diagnosis of breast cancer. By leveraging machine learning techniques, we seek to develop a predictive model that can classify tumor samples as malignant or benign based on various features extracted from cell nuclei.
 
-### Purpose
+## Purpose
 The goal is to create a machine learning model that accurately classifies breast cancer tumors. The model evaluates features such as radius, texture, perimeter, and smoothness of cell nuclei to assist with early detection.
 
-### Data
+## Data
 
 **Source:**
 The dataset used for this analysis is the [Wisconsin Breast Cancer Diagnostic Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data?resource=download), which includes:
