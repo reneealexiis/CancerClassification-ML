@@ -54,8 +54,8 @@ Both models performed well, with the Random Forest achieving 95% accuracy. Howev
 
 ## Summary and Next Steps
 - This project developed a machine learning model for classifying breast cancer biopsy samples as benign or malignant, using the Wisconsin Breast Cancer Diagnostic Dataset.
-- The logistic regression model, enhanced with interaction terms, achieved a 97% accuracy, reflecting a 2% improvement in performance.
-- The high precision, recall, and F1-scores for both classes indicate strong predictive capability
+- The Random Forest model outperformed the logistic regression model in recall for malignant cases, a crucial factor when addressing high-risk patients
+- **Our team recommends the Logistic Regression model, enhanced with interaction terms, as it achieved a 97% accuracy, reflecting a +1% improvement in performance**
 - Moving forward, next steps include further optimizing the model by exploring additional feature interactions and employing other advanced machine learning techniques.
 - Additionally, validating the model with external datasets and integrating it into clinical workflows could enhance its practical utility for early breast cancer detection.
 
