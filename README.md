@@ -64,5 +64,5 @@ Two notebooks are available in the repository for running in Google Colab:
 - **"Breast_Cancer_Logistic_Regression_Model-Colab.ipynb"**
 - **"Breast_Cancer_Random_Forest_Model-Colab.ipynb"**
 
-Presentation is available to view bin the repository: 
+Presentation is available to view in the repository: 
 - **Breast_Cancer_ML_Powerpoint_Final.pdf**
